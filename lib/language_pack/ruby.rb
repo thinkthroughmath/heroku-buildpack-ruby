@@ -608,7 +608,7 @@ WARNING
             end
           end
         end
-
+exit
         if $?.success?
           puts "Bundle completed (#{"%.2f" % bundle_time}s)"
           log "bundle", :status => "success"
