@@ -608,6 +608,7 @@ WARNING
             end
           end
         end
+        puts "HERE*****************************************"
         `gem env`
         `pwd`
         sleep(1000000)
