@@ -609,7 +609,7 @@ WARNING
           end
         end
         `gem env`
-        
+        `pwd`
         sleep(1000000)
         if $?.success?
           puts "Bundle completed (#{"%.2f" % bundle_time}s)"
