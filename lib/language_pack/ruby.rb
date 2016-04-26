@@ -611,6 +611,7 @@ WARNING
         puts "HERE*****************************************"
         system "gem env"
         system "pwd"
+        system "which bundle"
         sleep(1000000)
         if $?.success?
           puts "Bundle completed (#{"%.2f" % bundle_time}s)"
