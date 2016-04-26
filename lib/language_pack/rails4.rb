@@ -74,9 +74,7 @@ WARNING
           return true
         end
 
-        precompile = rake.task("assets:precompile")
-        sleep(1000000)
-        
+        precompile = rake.task("assets:precompile")        
         return true unless precompile.is_defined?
 
         topic("Preparing app for Rails asset pipeline")
@@ -85,7 +83,10 @@ WARNING
         @cache.load default_assets_cache
 
         precompile.invoke(env: rake_env)
-
+        puts "Here **********************************"
+        puts rake_env
+        system "which rake"
+        sleep(1000000000)
         if precompile.success?
           log "assets_precompile", :status => "success"
           puts "Asset precompilation completed (#{"%.2f" % precompile.time}s)"
