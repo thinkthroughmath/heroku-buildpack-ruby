@@ -609,8 +609,8 @@ WARNING
           end
         end
         puts "HERE*****************************************"
-        `gem env`
-        `pwd`
+        system "gem env"
+        system "pwd"
         sleep(1000000)
         if $?.success?
           puts "Bundle completed (#{"%.2f" % bundle_time}s)"
