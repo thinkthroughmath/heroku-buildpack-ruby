@@ -1,5 +1,5 @@
 GIT
-  remote: git://github.com/hone/ruby-git.git
+  remote: https://github.com/hone/ruby-git.git
   revision: 264836fcff3c037d8d8fc44bd770b150b46fdc4e
   branch: master
   specs:
@@ -42,7 +42,7 @@ GEM
     parallel_tests (0.13.1)
       parallel
     progress (2.4.0)
-    rake (10.0.4)
+    rake (12.3.3)
     repl_runner (0.0.3)
       activesupport
     rest-client (1.7.2)
